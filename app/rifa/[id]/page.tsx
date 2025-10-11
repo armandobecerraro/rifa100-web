@@ -28,3 +28,6 @@ export default async function RifaPage({ params, searchParams }: PageProps) {
   return <RifaLanding rifaId={id} numeroPreseleccionado={numero} />;
 }
 
+
+
+
