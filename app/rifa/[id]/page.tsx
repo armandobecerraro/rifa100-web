@@ -6,6 +6,24 @@ interface PageProps {
   searchParams: Promise<{ numero?: string }>;
 }
 
+// Permitir rutas dinámicas no predefinidas
+export const dynamicParams = true;
+
+// Función requerida para exportación estática
+export async function generateStaticParams() {
+  // En desarrollo, retornar un array vacío para permitir rutas dinámicas
+  if (process.env.NODE_ENV === 'development') {
+    return [];
+  }
+  
+  // En producción, definir las rifas que se van a pre-generar
+  // TODO: Obtener lista de rifas activas desde la API
+  return [
+    { id: 'test-rifa-id' },
+    // Agregar más IDs de rifas aquí cuando estén disponibles
+  ];
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
   
