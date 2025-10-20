@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Reglas básicas para el frontend web
+    // Solo lectura pública para rifas y números
+    
+    // Rifas - Solo lectura pública
+    match /rifas/{rifaId} {
+      allow read: if true; // Público para mostrar en landing page
+      allow write: if false; // Solo el backend puede escribir
+      
+      // Números de rifa - Solo lectura pública
+      match /numeros/{numeroId} {
+        allow read: if true; // Público para mostrar cartón
+        allow write: if false; // Solo el backend puede escribir
+      }
+    }
+    
+    // Configuración - Solo lectura pública
+    match /configuracion/{configId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
+

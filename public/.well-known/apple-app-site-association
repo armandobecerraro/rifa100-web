@@ -3,19 +3,9 @@
     "apps": [],
     "details": [
       {
-        "appID": "TEAM_ID.com.rifa100.app",
-        "paths": [
-          "/rifa/*",
-          "/r/*"
-        ]
+        "appID": "TEAM_ID.com.example.rifa100puestos",
+        "paths": ["/rifa/*", "/r/*"]
       }
     ]
-  },
-  "webcredentials": {
-    "apps": ["TEAM_ID.com.rifa100.app"]
   }
 }
-
-
-
-

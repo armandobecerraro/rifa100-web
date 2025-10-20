@@ -3,14 +3,10 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.rifa100.app",
+      "package_name": "com.example.rifa100puestos",
       "sha256_cert_fingerprints": [
-        "REEMPLAZAR_CON_TU_SHA256_FINGERPRINT"
+        "AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99"
       ]
     }
   }
 ]
-
-
-
-

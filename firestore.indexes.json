@@ -1,0 +1,34 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "rifas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaCreacion",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "numeros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "rifaId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "numero",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
+
